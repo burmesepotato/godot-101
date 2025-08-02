@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://dn3avyedd2tix"]
+
+[ext_resource type="Script" uid="uid://b7mnq3iqvfi03" path="res://Scripts/intro_to_scripting.gd" id="1_0xm2m"]
+[ext_resource type="Texture2D" uid="uid://d2ofde3648po7" path="res://Sprites/Player.png" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://d2iiktlpw288h" path="res://Scripts/mover.gd" id="3_h2yge"]
+
+[node name="Main" type="Node2D"]
+position = Vector2(0, 1)
+script = ExtResource("1_0xm2m")
+
+[node name="Player" type="Sprite2D" parent="."]
+position = Vector2(184, 123)
+texture = ExtResource("1_ig7tw")
+script = ExtResource("3_h2yge")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(184, 123)
+zoom = Vector2(2, 2)

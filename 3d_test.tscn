@@ -1,0 +1,43 @@
+[gd_scene load_steps=4 format=3 uid="uid://b25dj7alpunr4"]
+
+[ext_resource type="Material" uid="uid://bbfdc5eygecag" path="res://Materials/my_first_material.tres" id="1_g22v7"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_linea"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_g22v7"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Snowman" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.00448489, 0)
+
+[node name="snowman_top" type="MeshInstance3D" parent="Snowman"]
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 0.00526655, 1.61846, 0.0577171)
+material_override = ExtResource("1_g22v7")
+mesh = SubResource("SphereMesh_linea")
+skeleton = NodePath("../..")
+
+[node name="snowman_hands" type="MeshInstance3D" parent="Snowman"]
+transform = Transform3D(2.31207, 0, 0, 0, 0.173026, 0, 0, 0, 0.230917, -0.000988066, 0.995124, 0.0577171)
+material_override = ExtResource("1_g22v7")
+mesh = SubResource("BoxMesh_g22v7")
+skeleton = NodePath("../..")
+
+[node name="snowman_mid" type="MeshInstance3D" parent="Snowman"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.952591, 3.72529e-09)
+material_override = ExtResource("1_g22v7")
+mesh = SubResource("SphereMesh_linea")
+skeleton = NodePath("../..")
+
+[node name="snowman_base" type="MeshInstance3D" parent="Snowman"]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0)
+material_override = ExtResource("1_g22v7")
+mesh = SubResource("SphereMesh_linea")
+skeleton = NodePath("../..")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.879333, 0.476208, 0, -0.476208, -0.879333, 0, 2.47807, -3.63682)
+light_color = Color(0.878828, 0.731179, 0.54649, 1)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-0.995155, -0.0287898, -0.0940146, -0.0845565, 0.738549, 0.668876, 0.0501777, 0.673584, -0.737405, 0, 3.2513, -2.38301)
