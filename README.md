@@ -9,7 +9,7 @@ Welcome! This repo is my personal playground as I work through the [Godot 101 �
 - My first steps in Godot 4
 
 ## Why does this exist?
-I’m learning Godot from scratch—expect messy scripts, random experiments, and maybe the occasional “aha!” moment. If you’re also starting out, feel free to poke around or fork for your own practice.
+I’m learning Godot from scratch—expect messy scripts, random experiments. If you’re also starting out, feel free to look around.
 
 ## Credits
 - [Zenva Academy: Godot 101](https://academy.zenva.com/course/godot-4-101-game-engine-foundations/)
